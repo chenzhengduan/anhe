@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("../font-awesome/css/font-awesome.css");/*字体图标扩展*/
+@import url("../codelight/stylesheet.css");/*英文字体*/
+@import url("custom.css");/**/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+h1,h2,h3,h4,h5,h6{line-height:1;text-transform:none;}
+body { line-height:1.4; font-family:"微软雅黑","Hiragino Sans GB";overflow-x: hidden;}
+
+a:hover,a:focus{text-decoration:none;}
+a,
+.guodu,
+.topmenu-right,
+.product-list-con,
+.xwlb li,
+.topmenu-right ul li ol,
+.topmenu:after,
+.xwlb li *
+{
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.margin-t-20{ margin-top: 20px;}.margin-t-30{ margin-top: 30px;}.margin-t-40{ margin-top: 40px;}
+.margin-b-20{ margin-bottom: 20px;}.margin-b-30{ margin-bottom: 30px;}.margin-b-40{ margin-bottom: 40px;}
+.margin-t-b-20{margin-top: 20px;margin-bottom: 20px;}
+
+.rad50{border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;}
+.rad3{border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;}
+.rad6{border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px;}
+
+
+/*滚动条*/
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar{width:8px; height: 8px; background-color: #eee;}
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track{-webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.0); border-radius: 0px; background-color: #eee;}
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb{border-radius: 0px; -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,.0); background-color: #ccc;}
+
+/*css动画*/
+@-webkit-keyframes moveTop {
+    from{opacity:0;-webkit-transform:translateY(50%);}
+    to{opacity:1;-webkit-transform:translateY(0%);}
+}
+@-moz-keyframes moveTop {
+    from {opacity: 0; -moz-transform: translateY(50%);}
+    to {opacity: 1;-moz-transform: translateY(0%);}
+}
+@-ms-keyframes moveTop {
+    from {opacity: 0; -ms-transform: translateY(50%);}
+    to {opacity: 1;-ms-transform: translateY(0%);}
+}
+@-o-keyframes moveTop {
+    from {opacity: 0;-o-transform: translateY(50%);}
+    to {opacity: 1; -o-transform: translateY(0%);}
+}
+.moveTop{
+	opacity: 1;
+	-webkit-animation: moveTop 500ms ease-in-out;
+    -moz-animation: moveTop 500ms ease-in-out;
+    -ms-animation: moveTop 500ms ease-in-out;
+    -o-animation: moveTop 500ms ease-in-out;
+	animation: moveTop 500ms ease-in-out;
+}
+@-webkit-keyframes moveTop2 {
+    from{opacity:0;-webkit-transform:translateY(-50%);}
+    to{opacity:1;-webkit-transform:translateY(0%);}
+}
+@-moz-keyframes moveTop2 {
+    from {opacity: 0; -moz-transform: translateY(-50%);}
+    to {opacity: 1;-moz-transform: translateY(0%);}
+}
+@-ms-keyframes moveTop2 {
+    from {opacity: 0; -ms-transform: translateY(-50%);}
+    to {opacity: 1;-ms-transform: translateY(0%);}
+}
+@-o-keyframes moveTop2 {
+    from {opacity: 0;-o-transform: translateY(-50%);}
+    to {opacity: 1; -o-transform: translateY(0%);}
+}
+.moveTop2{
+	opacity: 1;
+	-webkit-animation: moveTop2 500ms ease-in-out;
+    -moz-animation: moveTop2 500ms ease-in-out;
+    -ms-animation: moveTop2 500ms ease-in-out;
+    -o-animation: moveTop2 500ms ease-in-out;
+	animation: moveTop2 500ms ease-in-out;
+}
